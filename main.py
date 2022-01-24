@@ -33,7 +33,6 @@ class Application(tk.Tk):
         self.cisloA = random.randint(1,99)
         self.cisloB = random.randint(1,100-self.cisloA)#aby vysledek nebyl větší než 100
         self.vysledek = self.cisloA + self.cisloB
-        self.lbl.config(text="+")
         return str(self.cisloA)+"+"+str(self.cisloB)
 
 
