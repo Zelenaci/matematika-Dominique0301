@@ -74,6 +74,13 @@ class Application(tk.Tk):
         self.generuj()
         self.vysledek_vstup.delete(0, END)
 
+    def validace_vstupu(vstup):
+        # procházím znak po znaku
+        for znak in vstup:
+            if znak not in "+-01234566789abcdef.,":
+                return False
+        return True
+
 
 app = Application()
 app.mainloop()
